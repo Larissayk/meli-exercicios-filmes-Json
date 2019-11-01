@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+app.use(express.json());
+
 //rotas
 const index = require('./routes/index')
 const filmes = require('./routes/filmesRoute')
