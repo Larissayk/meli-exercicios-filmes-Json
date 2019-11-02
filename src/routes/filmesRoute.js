@@ -9,6 +9,6 @@ router.get('/:genero/buscar', controller.getMovieByGenre)
 
 //Método POST
 router.post('/', controller.post)
-router.post("/:titulo/add/genero", controller.postNewGenreForMovie);
+router.post("/:titulo", controller.postNewGenreForMovie);
 
 module.exports = router
